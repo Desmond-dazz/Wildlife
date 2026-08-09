@@ -1,0 +1,420 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #afdc83;
+  --secondary-color: #233d1e;
+  --footer-bg-color: #23292a;
+  --accent-color: #bd7501;
+  --size: 1160px;
+}
+
+/* Utilities */
+
+header,
+section,
+footer {
+  padding: 0 140px;
+}
+body {
+  font-family: "Open sans", sans-serif;
+  background-color: var(--primary-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border: 1px solid black;
+  transition: all 0.2s linear;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+/* Header */
+header {
+  margin-top: 26px;
+  color: var(--secondary-color);
+  margin-bottom: 124px;
+  width: 100%;
+}
+
+header .main-menu li {
+  transition: all 0.2s linear;
+}
+header .main-menu li:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+header .logo {
+  font-size: 25px;
+}
+
+header .container {
+  max-width: var(--size);
+  margin: 0 auto;
+}
+
+header .header-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .main-menu {
+  display: flex;
+  align-items: center;
+  gap: 53px;
+}
+
+header .main-menu a {
+  color: var(--secondary-color);
+}
+
+/* Hero */
+.hero .container {
+  max-width: var(--size);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero .hero-heading {
+  margin-bottom: 13px;
+  font-size: 58px;
+}
+
+.hero .hero-heading span {
+  color: var(--accent-color);
+}
+
+.hero .container p {
+  max-width: 557px;
+  margin: 0 auto;
+}
+
+/* Gallery */
+.gallery-section {
+  margin-top: 123px;
+}
+
+.gallery-section .container {
+  max-width: var(--size);
+  margin: 0 auto;
+}
+
+.gallery-section .gallery-item {
+  width: calc(33.333% - 20px);
+  height: 369px;
+  border-radius: 20px;
+}
+
+.gallery-section .gallery-flex {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Footer */
+footer {
+  margin-top: 76px;
+  height: 317px;
+  background-color: var(--footer-bg-color);
+}
+
+footer .container {
+  color: var(--primary-color);
+  margin: 0 auto;
+  height: 100%;
+  max-width: var(--size);
+}
+
+footer .container {
+  padding-top: 32px;
+}
+
+footer .footer-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .contact-us,
+footer .follow-us {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+footer li {
+  margin-bottom: 0.5rem;
+}
+
+/* About page */
+/* Services */
+.services-section {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  min-height: 350px;
+  margin-top: 68px;
+  padding-bottom: 2rem;
+}
+
+.services-section .container {
+  max-width: var(--size);
+  margin: 0 auto;
+}
+
+.services-section .services-flex {
+  padding-top: 54px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 31px;
+}
+
+.services-section .services-items {
+  display: flex;
+  gap: 30px;
+}
+
+.services-section .services-item {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.services-section .services-item h4 {
+  font-weight: 500;
+}
+
+.services-section .services-item p {
+  font-size: 13px;
+}
+
+/* Teams */
+.teams {
+  min-height: 611px;
+  margin-top: 68px;
+  color: var(--secondary-color);
+}
+
+.teams .container {
+  max-width: var(--size);
+  margin: 0 auto;
+}
+
+.teams .container h3 {
+  text-align: center;
+  margin-top: 26px;
+  margin-bottom: 61px;
+}
+
+.teams .team-member {
+  max-width: 367px;
+  min-height: 367px;
+  flex: 1;
+}
+
+.teams .team-member img {
+  margin-bottom: 1rem;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+}
+
+.teams .team-members {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+/* Contact */
+/* Header */
+.contact-header {
+  margin-bottom: 1rem;
+}
+
+.contact-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-hero .container {
+  max-width: var(--size);
+  margin: 0 auto;
+}
+
+.contact-hero {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  min-height: 415px;
+}
+
+/* Contact us section */
+.contact-details .container {
+  color: var(--secondary-color);
+  max-width: var(--size);
+  margin: 0 auto;
+  margin-top: 81px;
+}
+
+.contact-details .contact-info {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact-details h3 {
+  margin-bottom: 1rem;
+}
+
+.contact-details form {
+  margin: 0 auto;
+  max-width: 764px;
+}
+
+.contact-details form input,
+.contact-details form textarea {
+  width: 100%;
+  border: none;
+  border-bottom: none;
+  border-bottom: 1px solid var(--secondary-color);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.contact-details form textarea {
+  height: 200px;
+  margin-bottom: 1rem;
+  resize: none;
+  padding: 1rem 0.5rem;
+}
+
+.contact-details form input {
+  padding: 1rem 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.contact-details form button {
+  display: block;
+  width: 100%;
+  background-color: #bd7501;
+  border: none;
+  height: 88px;
+  border-radius: 10px;
+  transition: all 0.2s linear;
+}
+
+.contact-details form button:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+/* Media Queires */
+@media (max-width: 1100px) {
+  header,
+  section,
+  footer {
+    padding: 0 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  header .header-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .gallery-section .gallery-item {
+    width: calc(50% - 20px);
+  }
+
+  footer .footer-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer .contact-us,
+  footer .follow-us {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  /* About */
+  .services-section .services-items {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .teams .team-members {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .teams .team-member {
+    text-align: center;
+    max-width: 500px;
+    min-height: max-content;
+  }
+
+  /* Contact */
+  .contact-hero .hero-heading {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 578px) {
+  header {
+    margin-bottom: 62px;
+  }
+
+  .hero .hero-heading {
+    font-size: 38px;
+  }
+
+  .gallery-section {
+    margin-top: 55px;
+  }
+
+  .gallery-section .gallery-flex {
+    align-items: center;
+  }
+
+  .gallery-section .gallery-item {
+    width: 100%;
+  }
+
+  header,
+  section,
+  footer {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 613px) {
+  .contact-hero .hero-heading {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 421px) {
+  .contact-hero .hero-heading {
+    font-size: 25px;
+  }
+}
