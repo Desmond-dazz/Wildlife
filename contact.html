@@ -52,17 +52,36 @@
             to you as soon as possible.
           </p>
         </div>
-        <form>
+        <form name="contact" netlify>
           <div class="form-group">
-            <input type="text" class="first-name" placeholder="First Name" />
+            <input
+              type="text"
+              name="first-name"
+              class="first-name"
+              placeholder="First Name"
+            />
           </div>
           <div class="form-group">
-            <input type="text" class="last-name" placeholder="Last Name" />
+            <input
+              type="text"
+              name="last-name"
+              class="last-name"
+              placeholder="Last Name"
+            />
           </div>
           <div class="form-group">
-            <input type="email" class="last-name" placeholder="Email" />
+            <input
+              type="email"
+              name="email"
+              class="last-name"
+              placeholder="Email"
+            />
           </div>
-          <textarea class="message" placeholder="Message"></textarea>
+          <textarea
+            class="message"
+            name="message"
+            placeholder="Message"
+          ></textarea>
           <button type="submit">Send Message</button>
         </form>
       </div>
